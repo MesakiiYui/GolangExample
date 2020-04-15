@@ -1,11 +1,13 @@
 package main
 // Programs start running in package main.-> must be "main" package
+// Go通过包来管理命名空间
 
 import (
 	"fmt"
 	"math/rand"
 	"math"
 )
+// fmt 是标准输入输出包
 
 // build a function
 // e.g
@@ -26,7 +28,7 @@ func main(){
 	// e.g: math.Pi
 	fmt.Println(math.Pi,)
 
-	// use := to receive data
+	// use := to receive data 利用 := 来接受函数返回的数据，此处为add()函数
 	res, a, b := add(1,3)
 	fmt.Println("addFunction:",  res, a, b)
 
